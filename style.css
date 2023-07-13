@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+/* Navbar styling */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+   background-color: white;
+  z-index: 100;
+}
+
+.rnav-list,
+.lnav-list {
+display: flex;
+align-items: center;
+}
+
+.rlist-item,
+.llist-item {
+list-style: none;
+}
+
+.rlist-item a, .llist-item a {
+text-decoration: none;
+border-radius: 0.4rem;
+color: black;
+padding: 2rem;
+font-size: 2rem;
+}
+
+.logo {
+padding: 2rem;
+padding-top:.6rem;
+width: 16rem;
+height: 5rem;
+}
+
+#toggle, label{
+display: none;
+}
+
+
+/* carousel styling */
+.carousel-item img {
+  width: 100%;
+  height: 32em;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3.0rem;
+  height: 3.5rem;
+  background-color: black;
+  top: calc(50% - 25px);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-control-next {
+  right: 0px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.c {
+  border: 1.5rem solid #291749;
+}
+
+/* flex container box styling */
+.flexcontainer {
+  display: flex;
+  width: 100%;
+  justify-content:space-around;
+  font-size: 1.6rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  margin: 10px;
+}
+
+.fig {
+  height: 22rem;
+}
+
+.hbox {
+  padding: 1.6rem 0px;
+  font-weight: 600;
+}
+
+.box p{
+  margin-bottom: 0;
+}
+
+.rbtn {
+  width: 9rem;
+  border: none;
+  background-color: white;
+  color: #291749;
+  padding: .5rem 0px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.imgcontainer{
+  height: 375px;
+}
+
+/* section2 styling */
+
+.section2{
+  width: 100%;
+  height: 230px;
+  background-color: rgb(255 203 16) ;
+  position: relative;
+}
+.hsection2,.imgbelowh{
+  padding: 17px;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.psection2 {
+  text-align: center;
+  font-size: 1.6rem;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  line-height: 1.2;
+  }
+
+  .imgsec2 {
+    width: 100%;
+    height: 334px;
+    position: absolute;
+    top: 67px;
+}
+
+  .imgsec2 img{
+    width: 35%;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  /* styling of img below section */
+  .imgbelowh{
+    color: #291749;
+  }
+ .imgpara{
+  text-align: center;
+  font-size: 1.6rem;
+  display: block;
+  width: 49%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  line-height: 1.2;
+  color:#291749;
+ }
+/* section4 styling */
+  .section4{
+    font-size: 1.6rem;
+    display: flex;
+  }
+  .secbox{
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem ;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    color: #291749;
+
+  }
+
+  #secbox1{
+    border-top: 2px solid grey;
+    border-right: 2px solid grey ;
+    position: relative;
+    margin-left: 1.5rem;
+  }
+  #secbox2{
+    border-top: 2px solid grey;
+    
+    position: relative;
+    margin-right: 1.5rem;
+  }
+  #secbox1::after,
+  #secbox1::before,#secbox2::after,
+  #secbox2::before  {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 20px;
+}
+#secbox1::after,#secbox2::after {
+  top: -2px;
+  right: -2px;
+  
+}
+#secbox1::before,#secbox2::before {
+  top: -2px;
+  left: -2px;
+}
+
+/* footer styling */
+.footer{
+  font-size: 1.6rem;
+  padding: 20px;
+  background-color:#291749;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* media query for tablet view  */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    padding: 2.4rem;
+    padding-top: 1rem;
+    width: 19rem;
+    height: 6rem;
+}
+
+.rlist-item a, .llist-item a{
+  padding: 1.5rem;
+}
+  .carousel-item img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .flexcontainer {
+
+    font-size: 1.5rem;
+  }
+
+  .rbtn {
+    width: 12rem;
+  }
+
+  .imgsec2 img{
+    width: 40%;
+  }
+
+  .psection2 {
+    font-size: 2rem;
+    width: 53%;}
+    
+  .imgpara {
+      font-size: 2rem;
+      width: 60%;
+    }
+
+    .secbox{
+      font-size: 2rem;
+    }
+
+    .footer{
+        font-size: 2rem;
+    }
+  
+}
+
+/* media query for mobile view  */
+@media (max-width: 767px) {
+
+  .navigation{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navigation :nth-child(1) { order: 2; }
+  .navigation :nth-child(2) { order: 3; }
+  .navigation :nth-child(3) { order: 4; }
+  .navigation :nth-child(4) { order: 1; }
+  .navigation :nth-child(5) { order: 5; }
+
+
+  .logo {
+padding-top: 1rem;
+}
+
+.rnav-list,
+.lnav-list {
+  width: 100%;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color:#291749;
+  margin-bottom: 0rem;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 2rem;
+  
+}
+
+.rlist-item,.llist-item{
+  padding: 1rem;
+}
+.rnav-list{
+  top: 50px;
+}
+.lnav-list{
+  top:206px;
+}
+
+.rlist-item a, .llist-item a{
+
+  color: white;
+  font-size: 2.4rem;
+}
+
+label{
+  font-size: 1.6rem;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 0rem;
+}
+  #toggle:checked ~ .rnav-list{
+display: flex;
+}
+#toggle:checked ~ .lnav-list{
+display: flex;
+}
+
+  .carousel-item img {
+    height: 20rem;
+  }
+
+  .flexcontainer{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .box {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .fig {
+    height: 25rem;
+}
+.psection2,.imgpara{
+  font-size: 1.6rem;
+  width: 90%;
+}
+
+.hsection2{
+  font-size: 4rem;
+}
+
+.imgsec2 {
+  
+    width: 100%;
+    height: 350px;
+    top: 70px;
+}
+.imgsec2 img {
+  width: 70%;
+  height: 92%;
+  
+}
+
+.imgbelowh{
+  font-size: 2.5rem;
+}
+
+.section4{
+  flex-wrap: wrap;
+
+}
+.secbox{
+width: 100%;
+padding: 30px;
+}
+
+#secbox1{
+  margin-bottom: 0rem;
+  border-right: none;
+}
+#secbox2{
+  margin-top: 0rem;
+}
+
+#secbox2::after,
+  #secbox2::before  {
+  background-color: white;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 30%;
+}
+
+.footer{
+  padding: 15px;
+  background-color: #291749;
+  font-size: 1.4rem;
+  color: white;
+}
+
+}
