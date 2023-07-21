@@ -423,6 +423,7 @@ label {
     color:black;
     text-decoration: none;
   }
+
   label {
     font-size: 1.7rem;
     display: block;
@@ -430,9 +431,11 @@ label {
     margin-bottom: 0rem;
     color: #3A0956;
   }
+
   #toggle:checked ~ .rnav-list {
     display: flex;
   }
+
   #toggle:checked ~ .lnav-list {
     display: flex;
   }
@@ -443,6 +446,7 @@ label {
     background-size: cover;
     background-position: center;
   }
+
   .bg-img {
     background-image: url(./assets/slider.jpg);
   }
@@ -456,17 +460,21 @@ label {
     width: 100%;
     padding: 0px 15px;
   }
+
   .fig {
     height: 25rem;
   }
+
   .psection2,
   .imgpara {
     font-size: 1.6rem;
     width: 90%;
   }
+
   .section2 {
     height: 290px;
   }
+
   .hsection2 {
     font-size: 3rem;
   }
@@ -476,6 +484,7 @@ label {
     height: 35rem;
     top: 12rem;
   }
+
   .imgsec2 img {
     width: 70%;
     height: 92%;
@@ -488,6 +497,7 @@ label {
   .section4 {
     flex-wrap: wrap;
   }
+
   .secbox {
     width: 100%;
     padding: 30px;
@@ -499,6 +509,7 @@ label {
     #fff;
     background-repeat: no-repeat;
   }
+  
   #secbox2 {
     margin-top: 0rem;
     padding-bottom: 0rem;
