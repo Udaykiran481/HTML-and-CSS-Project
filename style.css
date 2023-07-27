@@ -16,12 +16,12 @@ body {
   margin: 0;
 }
 
-.main{
+.main {
   flex: 1;
 }
-/* Navbar styling */
+
 .navigation {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,6 @@ body {
   background-color: white;
   z-index: 100;
   box-sizing: border-box;
-  font-weight: 400;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -53,15 +52,16 @@ body {
 .llist-item a {
   text-decoration: none;
   border-radius: 0.4rem;
+  font-weight: 300;
   color: black;
   padding: 1rem;
   font-size: 2rem;
+  transition: all 0.5s ease-out;
 }
 
 .rlist-item a:hover,
 .llist-item a:hover {
-  color: #3A0956;
-  text-decoration: underline;
+  background-color: #f0f0f0;
 }
 .logo img {
   padding: 0.5rem 1rem;
@@ -73,15 +73,6 @@ body {
 label {
   display: none;
 }
-
-/* carousel styling 
-.carousel-item img {
-  width: 100%;
-  height: 40rem;
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-}*/
 
 .bg-img {
   background-image: url(./assets/slider2.jpg);
@@ -124,12 +115,11 @@ label {
 }
 
 .c {
-  border: 1.5rem solid #3A0956;
+  border: 1.5rem solid #290037;
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* flex container box styling */
 .flexcontainer {
   display: flex;
   width: 100%;
@@ -153,28 +143,30 @@ label {
 
 .hbox {
   padding: 1.6rem 0px;
-  font-weight: 400;
+  font-weight: 300;
+  color: black;
 }
 
 .box p {
   margin-bottom: 0;
   font-weight: 300;
+  color: #443636;
 }
 
 .rbtn {
   width: 9rem;
   border: none;
   background-color: white;
-  color: #3A0956;
+  color: #290037;
   padding: 1rem 0rem;
   font-weight: 400;
   cursor: pointer;
   margin-top: 0.5rem;
   margin-bottom: 2.5rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 .rbtn:hover {
-  background-color:#ebd6f7;
+  background-color: #ebebeb;
   color: black;
 }
 .imgcontainer {
@@ -182,8 +174,6 @@ label {
   max-width: 1300px;
   margin: 0 auto;
 }
-
-/* section2 styling */
 
 .section2 {
   width: 100%;
@@ -203,6 +193,7 @@ label {
 }
 .hsection2 {
   padding-top: 5.5rem;
+  color: #290037;
 }
 .psection2 {
   text-align: center;
@@ -212,6 +203,7 @@ label {
   margin: 0 auto;
   margin-bottom: 0px;
   line-height: 1.5;
+  color: #290037;
 }
 
 .imgsec2 {
@@ -228,14 +220,13 @@ label {
   margin: auto;
 }
 
-/* styling of img below section */
-.imgbelowsec{
+.imgbelowsec {
   max-width: 1300px;
   margin: 0 auto;
 }
 
 .imgbelowh {
-  color: #3A0956;
+  color: #290037;
 }
 .imgpara {
   text-align: center;
@@ -245,10 +236,10 @@ label {
   margin: 0 auto;
   margin-bottom: 0px;
   line-height: 1.2;
-  color: #3A0956;
+  color: #290037;
   font-weight: 300;
 }
-/* section4 styling */
+
 .section4 {
   font-size: 1.6rem;
   display: flex;
@@ -263,7 +254,7 @@ label {
   padding-bottom: 0rem;
   margin-top: 4.5rem;
   margin-bottom: 5rem;
-  color: #3A0956;
+  color: #290037;
   font-style: italic;
   font-weight: 300;
 }
@@ -280,18 +271,15 @@ label {
   background-repeat: no-repeat;
 }
 
-/* footer styling */
 .footer {
   display: block;
   width: 100%;
   font-size: 1.6rem;
   padding: 20px;
-  background-color: #3A0956;
+  background-color: #290037;
   text-align: center;
   color: white;
 }
-
-/* media query for tablet view  */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   html {
@@ -361,7 +349,6 @@ label {
   }
 }
 
-/* media query for mobile view  */
 @media (max-width: 767px) {
   .navigation {
     justify-content: space-between;
@@ -395,7 +382,7 @@ label {
     display: none;
     text-align: center;
     flex-wrap: wrap;
-    background-color:#3A0956;
+    background-color: #290037;
     margin-bottom: 0rem;
     position: absolute;
     transition: all 0.3s ease-in-out;
@@ -420,7 +407,7 @@ label {
   }
   .rlist-item a:hover,
   .llist-item a:hover {
-    color:black;
+    color: black;
     text-decoration: none;
   }
 
@@ -429,7 +416,7 @@ label {
     display: block;
     padding-right: 2rem;
     margin-bottom: 0rem;
-    color: #3A0956;
+    color: #290037;
   }
 
   #toggle:checked ~ .rnav-list {
@@ -505,16 +492,14 @@ label {
 
   #secbox1 {
     margin-bottom: 0rem;
-    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px,
-    #fff;
+    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px, #fff;
     background-repeat: no-repeat;
   }
-  
+
   #secbox2 {
     margin-top: 0rem;
     padding-bottom: 0rem;
-    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 40% 2px,
-    #fff;
+    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 40% 2px, #fff;
     background-repeat: no-repeat;
   }
 

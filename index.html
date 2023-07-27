@@ -14,24 +14,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
-      <!-- navigation bar  -->
       <nav class="navigation">
         <input type="checkbox" id="toggle" />
         <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
@@ -49,18 +44,11 @@
           <li class="llist-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- carousel -->
       <div id="carousels" class="carousel slide c" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item bg-img carousel-image active">
-            <!-- <img class="d-block w-100" src="./assets/slider.jpg" alt="First slide" /> -->
-          </div>
-          <div class="carousel-item bg-img carousel-image">
-            <!-- <img class="d-block w-100" src="./assets/slider.jpg" alt="Second slide" /> -->
-          </div>
-          <div class="carousel-item bg-img carousel-image">
-            <!-- <img class="d-block w-100" src="./assets/slider.jpg" alt="Third slide" /> -->
-          </div>
+          <div class="carousel-item bg-img carousel-image active"></div>
+          <div class="carousel-item bg-img carousel-image"></div>
+          <div class="carousel-item bg-img carousel-image"></div>
         </div>
         <a
           class="carousel-control-prev"
@@ -81,9 +69,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <!-- carousel below flex container section -->
-      <section class="flexcontainer" id="services">
-        <div class="box">
+      <div class="flexcontainer" id="services">
+        <section class="box">
           <img src="./assets/beach.jpg" alt="beach_card img" class="fig" />
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -92,8 +79,8 @@
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
           <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </div>
-        <div class="box">
+        </section>
+        <section class="box">
           <img src="./assets/sunset.jpg" alt="sunset_card img" class="fig" />
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -102,8 +89,8 @@
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
           <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </div>
-        <div class="box">
+        </section>
+        <section class="box">
           <img src="./assets/sunset2.jpg" alt="sunset2_card img" class="fig" />
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -112,11 +99,10 @@
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
           <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </div>
-      </section>
-      <!-- section4 -->
-      <section class="imgcontainer" id="about">
-        <div class="section2">
+        </section>
+      </div>
+      <div class="imgcontainer" id="about">
+        <section class="section2">
           <span class="hsection2">Cras elit massa</span>
           <p class="psection2">
             Phasellus at egestas nulla, eget hendrerit sapien. Nullam eleifend
@@ -125,9 +111,8 @@
           <div class="imgsec2">
             <img src="./assets/Fruit.png" alt="fruit" />
           </div>
-        </div>
-      </section>
-      <!-- img below section -->
+        </section>
+      </div>
       <section class="imgbelowsec">
         <span class="imgbelowh">Donec eu viverra neque</span>
         <p class="imgpara">
@@ -136,7 +121,6 @@
           luctus.
         </p>
       </section>
-      <!-- section4 -->
       <section class="section4" id="contact">
         <p class="secbox" id="secbox1">
           "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
@@ -150,11 +134,9 @@
         </p>
       </section>
     </div>
-    <!-- footer -->
     <footer class="footer">
       <span>Copyright &copy; 2019 Natural. All rights reserved.</span>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
