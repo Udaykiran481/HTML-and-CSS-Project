@@ -30,8 +30,6 @@ body {
   background-color: white;
   z-index: 100;
   box-sizing: border-box;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .rnav-list,
@@ -56,7 +54,6 @@ body {
   color: black;
   padding: 1rem;
   font-size: 2rem;
-  transition: all 0.5s ease-out;
 }
 
 .rlist-item a:hover,
@@ -78,8 +75,8 @@ label {
   background-image: url(./assets/slider2.jpg);
 }
 .carousel-image {
-  height: 40rem;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 23vw;
   background-size: cover;
   background-position: center;
 }
@@ -116,8 +113,8 @@ label {
 
 .c {
   border: 1.5rem solid #290037;
-  max-width: 1300px;
-  margin: 0 auto;
+  border-bottom: 2rem solid #290037;
+  border-top: 2rem solid #290037;
 }
 
 .flexcontainer {
@@ -139,6 +136,7 @@ label {
 
 .fig {
   height: 28rem;
+  width: 100%;
 }
 
 .hbox {
@@ -166,13 +164,10 @@ label {
   border-radius: 0.8rem;
 }
 .rbtn:hover {
-  background-color: #ebebeb;
   color: black;
 }
 .imgcontainer {
   height: 435px;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .section2 {
@@ -207,10 +202,14 @@ label {
 }
 
 .imgsec2 {
-  width: 100%;
+  display: block;
   height: 334px;
   position: absolute;
   top: 105px;
+  left: 0px;
+  right: 0px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .imgsec2 img {
@@ -286,9 +285,7 @@ label {
     font-size: 50%;
   }
 
-  .logo {
-    padding: 2.4rem;
-    padding-top: 1rem;
+  .logo img {
     width: 19rem;
     height: 6rem;
   }
@@ -297,9 +294,13 @@ label {
   .llist-item a {
     padding: 1.5rem;
   }
-  .carousel-item img {
-    width: 100%;
-    height: 30rem;
+
+  .c {
+    border: 1.5rem solid #290037;
+  }
+
+  .carousel-image {
+    height: 30vw;
   }
 
   .flexcontainer {
@@ -397,7 +398,7 @@ label {
     top: 90px;
   }
   .lnav-list {
-    top: 246px;
+    top: 257px;
   }
 
   .rlist-item a,
@@ -408,7 +409,6 @@ label {
   .rlist-item a:hover,
   .llist-item a:hover {
     color: black;
-    text-decoration: none;
   }
 
   label {
@@ -427,11 +427,14 @@ label {
     display: flex;
   }
 
+  .c {
+    border: 1.5rem solid #290037;
+    border-left: 2rem solid #290037;
+    border-right: 2rem solid #290037;
+  }
+
   .carousel-image {
-    height: 20rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 45vw;
   }
 
   .bg-img {
@@ -505,6 +508,6 @@ label {
 
   .footer {
     padding: 15px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }

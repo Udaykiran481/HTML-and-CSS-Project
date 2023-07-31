@@ -20,22 +20,26 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="main">
+    <div class="main" id="home">
       <nav class="navigation">
         <input type="checkbox" id="toggle" />
         <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
         <ul class="rnav-list">
-          <li class="rlist-item"><a href="#">Home</a></li>
+          <li class="rlist-item"><a href="#home">Home</a></li>
           <li class="rlist-item"><a href="#carousels">Products</a></li>
           <li class="rlist-item"><a href="#services">Services</a></li>
         </ul>
-        <a href="#" class="logo"
+        <a href="#home" class="logo"
           ><img src="./assets/logo.jpg" alt="Natural logo"
         /></a>
         <ul class="lnav-list">
@@ -69,38 +73,63 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="flexcontainer" id="services">
-        <section class="box">
+      <section class="flexcontainer" id="services">
+        <figure class="box">
           <img src="./assets/beach.jpg" alt="beach_card img" class="fig" />
-          <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
-          <p class="pfig">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            expedita a officia eum repudiandae quo perspiciatis. Autem animi
-            optio excepturi saepe modi aspernatur, veritatis voluptatibus!
-          </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </section>
-        <section class="box">
+          <figcaption>
+            <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
+            <p class="pfig">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              expedita a officia eum repudiandae quo perspiciatis. Autem animi
+              optio excepturi saepe modi aspernatur, veritatis voluptatibus!
+            </p>
+            <input
+              type="button"
+              value="Read More"
+              id="my-button"
+              class="rbtn"
+            />
+          </figcaption>
+        </figure>
+        <figure class="box">
           <img src="./assets/sunset.jpg" alt="sunset_card img" class="fig" />
-          <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
-          <p class="pfig">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            expedita a officia eum repudiandae quo perspiciatis. Autem animi
-            optio excepturi saepe modi aspernatur, veritatis voluptatibus!
-          </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </section>
-        <section class="box">
-          <img src="./assets/sunset2.jpg" alt="sunset2_card img" class="fig" />
-          <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
-          <p class="pfig">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            expedita a officia eum repudiandae quo perspiciatis. Autem animi
-            optio excepturi saepe modi aspernatur, veritatis voluptatibus!
-          </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </section>
-      </div>
+          <figcaption>
+            <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
+            <p class="pfig">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              expedita a officia eum repudiandae quo perspiciatis. Autem animi
+              optio excepturi saepe modi aspernatur, veritatis voluptatibus!
+            </p>
+            <input
+              type="button"
+              value="Read More"
+              id="my-button"
+              class="rbtn"
+            />
+          </figcaption>
+        </figure>
+        <figure class="box">
+          <figcaption>
+            <img
+              src="./assets/sunset2.jpg"
+              alt="sunset2_card img"
+              class="fig"
+            />
+            <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
+            <p class="pfig">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              expedita a officia eum repudiandae quo perspiciatis. Autem animi
+              optio excepturi saepe modi aspernatur, veritatis voluptatibus!
+            </p>
+            <input
+              type="button"
+              value="Read More"
+              id="my-button"
+              class="rbtn"
+            />
+          </figcaption>
+        </figure>
+      </section>
       <div class="imgcontainer" id="about">
         <section class="section2">
           <span class="hsection2">Cras elit massa</span>
