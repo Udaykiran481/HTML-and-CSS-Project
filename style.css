@@ -4,22 +4,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 html {
   font-size: 62.5%;
 }
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
 }
-
 .main {
   flex: 1;
 }
-
 .navigation {
   padding: 3rem 0rem;
   display: flex;
@@ -31,7 +27,6 @@ body {
   z-index: 100;
   box-sizing: border-box;
 }
-
 .rnav-list,
 .lnav-list {
   display: flex;
@@ -39,13 +34,11 @@ body {
   justify-content: center;
   margin-bottom: 0rem;
 }
-
 .rlist-item,
 .llist-item {
   list-style: none;
   padding: 1rem 0.5rem;
 }
-
 .rlist-item a,
 .llist-item a {
   text-decoration: none;
@@ -55,7 +48,6 @@ body {
   padding: 1rem;
   font-size: 2rem;
 }
-
 .rlist-item a:hover,
 .llist-item a:hover {
   background-color: #f0f0f0;
@@ -65,12 +57,10 @@ body {
   width: 18rem;
   height: 5.2rem;
 }
-
 #toggle,
 label {
   display: none;
 }
-
 .bg-img {
   background-image: url(./assets/slider2.jpg);
 }
@@ -88,35 +78,28 @@ label {
   top: calc(50% - 25px);
   opacity: 1;
 }
-
 .carousel-control-prev {
   left: 0px;
 }
-
 .carousel-control-next {
   right: 0px;
 }
-
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 3rem;
   height: 3rem;
 }
-
 .carousel-control-next-icon {
   background-image: url(./assets/arrow-right.svg);
 }
-
 .carousel-control-prev-icon {
   background-image: url(./assets/arrow-left.svg);
 }
-
 .c {
-  border: 1.5rem solid #290037;
-  border-bottom: 2rem solid #290037;
-  border-top: 2rem solid #290037;
+  border: 1.5rem solid #35006D;
+  border-bottom: 2rem solid #35006D;
+  border-top: 2rem solid #35006D;
 }
-
 .flexcontainer {
   display: flex;
   width: 100%;
@@ -126,36 +109,31 @@ label {
   max-width: 1300px;
   margin: 0 auto;
 }
-
 .box {
   display: flex;
   flex-direction: column;
   width: 31%;
   margin: 10px;
 }
-
 .fig {
   height: 28rem;
   width: 100%;
 }
-
 .hbox {
   padding: 1.6rem 0px;
   font-weight: 300;
   color: black;
 }
-
 .box p {
   margin-bottom: 0;
   font-weight: 300;
   color: #443636;
 }
-
 .rbtn {
   width: 9rem;
   border: none;
   background-color: white;
-  color: #290037;
+  color: #35006D;
   padding: 1rem 0rem;
   font-weight: 400;
   cursor: pointer;
@@ -184,11 +162,11 @@ label {
   font-size: 5rem;
   margin-bottom: 0px;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 200;
 }
 .hsection2 {
   padding-top: 5.5rem;
-  color: #290037;
+  color: #35006D;
 }
 .psection2 {
   text-align: center;
@@ -198,9 +176,9 @@ label {
   margin: 0 auto;
   margin-bottom: 0px;
   line-height: 1.5;
-  color: #290037;
+  color: #35006D;
+  font-weight: 300;
 }
-
 .imgsec2 {
   display: block;
   height: 334px;
@@ -211,21 +189,18 @@ label {
   max-width: 1300px;
   margin: 0 auto;
 }
-
 .imgsec2 img {
   width: 40%;
   height: 100%;
   display: block;
   margin: auto;
 }
-
 .imgbelowsec {
   max-width: 1300px;
   margin: 0 auto;
 }
-
 .imgbelowh {
-  color: #290037;
+  color: #35006D;
 }
 .imgpara {
   text-align: center;
@@ -235,10 +210,9 @@ label {
   margin: 0 auto;
   margin-bottom: 0px;
   line-height: 1.2;
-  color: #290037;
-  font-weight: 300;
+  color: #35006D;
+  font-weight: 200;
 }
-
 .section4 {
   font-size: 1.6rem;
   display: flex;
@@ -253,11 +227,10 @@ label {
   padding-bottom: 0rem;
   margin-top: 4.5rem;
   margin-bottom: 5rem;
-  color: #290037;
+  color: #35006D;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 200;
 }
-
 #secbox1 {
   margin-left: 1.5rem;
   background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px,
@@ -269,40 +242,35 @@ label {
   background: linear-gradient(rgb(172, 168, 168) 0 0) top / 95% 2px, #fff;
   background-repeat: no-repeat;
 }
-
 .footer {
   display: block;
   width: 100%;
   font-size: 1.6rem;
   padding: 20px;
-  background-color: #290037;
+  background-color: #35006D;
   text-align: center;
   color: white;
+  font-weight: 200;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   html {
     font-size: 50%;
   }
-
   .logo img {
     width: 19rem;
     height: 6rem;
   }
-
   .rlist-item a,
   .llist-item a {
-    padding: 1.5rem;
+    font-size: 2.4rem;
   }
-
   .c {
-    border: 1.5rem solid #290037;
+    border: 1.5rem solid #35006D;
   }
-
   .carousel-image {
     height: 30vw;
   }
-
   .flexcontainer {
     font-size: 1.5rem;
   }
@@ -312,29 +280,23 @@ label {
   .rbtn {
     width: 8.5rem;
   }
-
   .imgsec2 {
     top: 90px;
   }
-
   .imgsec2 img {
     width: 50%;
   }
-
   .psection2 {
     font-size: 2rem;
     width: 53%;
   }
-
   .imgpara {
     font-size: 2rem;
     width: 80%;
   }
-
   .secbox {
     font-size: 2rem;
   }
-
   #secbox1 {
     background: linear-gradient(rgb(172, 168, 168) 0 0) top / 90% 2px,
       linear-gradient(rgb(172, 168, 168) 0 0) right bottom / 2px 77%, #fff;
@@ -344,7 +306,6 @@ label {
     background: linear-gradient(rgb(172, 168, 168) 0 0) top / 90% 2px, #fff;
     background-repeat: no-repeat;
   }
-
   .footer {
     font-size: 2rem;
   }
@@ -370,12 +331,10 @@ label {
   .navigation :nth-child(5) {
     order: 5;
   }
-
   .logo img {
     padding: 0.5rem 2rem;
     width: 16rem;
   }
-
   .rnav-list,
   .lnav-list {
     width: 100%;
@@ -383,13 +342,11 @@ label {
     display: none;
     text-align: center;
     flex-wrap: wrap;
-    background-color: #290037;
+    background-color: #35006D;
     margin-bottom: 0rem;
     position: absolute;
     transition: all 0.3s ease-in-out;
-    padding-bottom: 2rem;
   }
-
   .rlist-item,
   .llist-item {
     padding: 1rem;
@@ -398,114 +355,93 @@ label {
     top: 90px;
   }
   .lnav-list {
-    top: 257px;
+    top: 239px;
   }
-
   .rlist-item a,
   .llist-item a {
     color: white;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .rlist-item a:hover,
   .llist-item a:hover {
     color: black;
   }
-
   label {
     font-size: 1.7rem;
     display: block;
     padding-right: 2rem;
     margin-bottom: 0rem;
-    color: #290037;
+    color: #35006D;
   }
-
   #toggle:checked ~ .rnav-list {
     display: flex;
   }
-
   #toggle:checked ~ .lnav-list {
     display: flex;
   }
-
   .c {
-    border: 1.5rem solid #290037;
-    border-left: 2rem solid #290037;
-    border-right: 2rem solid #290037;
+    border: 1.5rem solid #35006D;
+    border-left: 2rem solid #35006D;
+    border-right: 2rem solid #35006D;
   }
-
   .carousel-image {
     height: 45vw;
   }
-
   .bg-img {
     background-image: url(./assets/slider.jpg);
   }
-
   .flexcontainer {
     flex-direction: column;
     align-items: center;
   }
-
   .box {
     width: 100%;
     padding: 0px 15px;
   }
-
   .fig {
     height: 25rem;
   }
-
   .psection2,
   .imgpara {
     font-size: 1.6rem;
     width: 90%;
   }
-
   .section2 {
     height: 290px;
   }
-
   .hsection2 {
     font-size: 3rem;
   }
-
   .imgsec2 {
     width: 100%;
     height: 35rem;
     top: 12rem;
   }
-
   .imgsec2 img {
     width: 70%;
     height: 92%;
   }
-
   .imgbelowh {
     font-size: 2.3rem;
   }
-
   .section4 {
     flex-wrap: wrap;
   }
-
   .secbox {
     width: 100%;
     padding: 30px;
   }
-
   #secbox1 {
     margin-bottom: 0rem;
     background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px, #fff;
     background-repeat: no-repeat;
   }
-
   #secbox2 {
     margin-top: 0rem;
     padding-bottom: 0rem;
     background: linear-gradient(rgb(172, 168, 168) 0 0) top / 40% 2px, #fff;
     background-repeat: no-repeat;
   }
-
   .footer {
     padding: 15px;
     font-size: 1.2rem;
