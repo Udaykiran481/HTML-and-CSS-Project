@@ -1,160 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Natural</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="main" id="home">
-      <nav class="navigation">
-        <input type="checkbox" id="toggle" />
-        <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
-        <ul class="rnav-list">
-          <li class="rlist-item"><a href="#home">Home</a></li>
-          <li class="rlist-item"><a href="#carousels">Products</a></li>
-          <li class="rlist-item"><a href="#services">Services</a></li>
-        </ul>
-        <a href="#home" class="logo"
-          ><img src="./assets/logo.jpg" alt="Natural logo"
-        /></a>
-        <ul class="lnav-list">
-          <li class="llist-item"><a href="#about">About</a></li>
-          <li class="llist-item"><a href="#carousels">Gallery</a></li>
-          <li class="llist-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div id="carousels" class="carousel slide c" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item bg-img carousel-image active"></div>
-          <div class="carousel-item bg-img carousel-image"></div>
-          <div class="carousel-item bg-img carousel-image"></div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carousels"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousels"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Natural</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main" id="home">
+    <nav class="navigation">
+      <input type="checkbox" id="toggle">
+      <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
+      <ul class="rnav-list">
+        <li class="rlist-item"><a href="#home">Home</a></li>
+        <li class="rlist-item"><a href="#carousels">Products</a></li>
+        <li class="rlist-item"><a href="#services">Services</a></li>
+      </ul>
+      <a href="#home" class="logo"><img src="./assets/logo.jpg" alt="Natural logo"></a>
+      <ul class="lnav-list">
+        <li class="llist-item"><a href="#about">About</a></li>
+        <li class="llist-item"><a href="#carousels">Gallery</a></li>
+        <li class="llist-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="carousels" class="carousel slide c" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item bg-img carousel-image active"></div>
+        <div class="carousel-item bg-img carousel-image"></div>
+        <div class="carousel-item bg-img carousel-image"></div>
       </div>
-      <section class="flexcontainer" id="services">
-        <article class="box">
-          <img src="./assets/beach.jpg" alt="beach_card img" class="fig" />
+      <a class="carousel-control-prev" href="#carousels" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousels" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <article class="flexcontainer" id="services">
+      <figure class="box">
+        <img src="./assets/beach.jpg" alt="beach_card img" class="fig">
+        <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </article>
-        <article class="box">
-          <img src="./assets/sunset.jpg" alt="sunset_card img" class="fig" />
+          <input type="button" value="Read More" class="rbtn">
+        </figcaption>
+      </figure>
+      <figure class="box">
+        <img src="./assets/sunset.jpg" alt="sunset_card img" class="fig">
+        <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </article>
-        <article class="box">
-          <img src="./assets/sunset2.jpg" alt="sunset2_card img" class="fig" />
+          <input type="button" value="Read More" class="rbtn">
+        </figcaption>
+      </figure>
+      <figure class="box">
+        <img src="./assets/sunset2.jpg" alt="sunset2_card img" class="fig">
+        <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" id="my-button" class="rbtn" />
-        </article>
-      </section>
-      <article class="imgcontainer" id="about">
-        <section class="section2">
-          <span class="hsection2">Cras elit massa</span>
-          <p class="psection2">
-            Phasellus at egestas nulla, eget hendrerit sapien. Nullam eleifend
-            ruturm feils, non ullamcorper justo pharetra non
-          </p>
-          <div class="imgsec2">
-            <img src="./assets/Fruit.png" alt="fruit" />
-          </div>
-        </section>
+          <input type="button" value="Read More" class="rbtn">
+        </figcaption>
+      </figure>
+    </article>
+    <section class="imgcontainer" id="about">
+      <article class="section2">
+        <span class="hsection2">Cras elit massa</span>
+        <p class="psection2">
+          Phasellus at egestas nulla, eget hendrerit sapien. Nullam eleifend
+          ruturm feils, non ullamcorper justo pharetra non
+        </p>
+        <div class="imgsec2">
+          <img src="./assets/Fruit.png" alt="fruit">
+        </div>
       </article>
-      <section class="imgbelowsec">
-        <span class="imgbelowh">Donec eu viverra neque</span>
-        <p class="imgpara">
-          Nulla a sem in erat accumsan molestic et ac dolor. Vivamus ornare arcu
-          id lacus rhonus mollis. Nulla facillsi. Sed cursus dolor dignissim
-          luctus.
-        </p>
-      </section>
-      <section class="section4" id="contact">
-        <p class="secbox" id="secbox1">
-          "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Mruris vitae posuere
-          turpis."
-        </p>
-        <p class="secbox" id="secbox2">
-          "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Mruris vitae posuere
-          turpis."
-        </p>
-      </section>
-    </div>
-    <footer class="footer">
-      <span>Copyright &copy; 2019 Natural. All rights reserved.</span>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </section>
+    <section class="imgbelowsec">
+      <span class="imgbelowh">Donec eu viverra neque</span>
+      <p class="imgpara">
+        Nulla a sem in erat accumsan molestic et ac dolor. Vivamus ornare arcu
+        id lacus rhonus mollis. Nulla facillsi. Sed cursus dolor dignissim
+        luctus.
+      </p>
+    </section>
+    <section class="section4" id="contact">
+      <p class="secbox" id="secbox1">
+        "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Mruris vitae posuere
+        turpis."
+      </p>
+      <p class="secbox" id="secbox2">
+        "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Mruris vitae posuere
+        turpis."
+      </p>
+    </section>
+  </div>
+  <footer class="footer">
+    <span>Copyright &copy; 2019 Natural. All rights reserved.</span>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
