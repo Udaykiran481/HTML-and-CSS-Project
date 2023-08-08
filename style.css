@@ -45,7 +45,7 @@ body {
   border-radius: 0.4rem;
   font-weight: 300;
   color: black;
-  padding: 1rem;
+  padding: .8rem;
   font-size: 2rem;
 }
 .rlist-item a:hover,
@@ -66,7 +66,7 @@ label {
 }
 .carousel-image {
   width: 100%;
-  height: 23vw;
+  height: 25vw;
   background-size: cover;
   background-position: center;
 }
@@ -116,7 +116,7 @@ label {
   margin: 10px;
 }
 .fig {
-  height: 28rem;
+  height: 24rem;
   width: 100%;
 }
 .hbox {
@@ -149,7 +149,7 @@ label {
 }
 .section2 {
   width: 100%;
-  height: 275px;
+  height: 300px;
   background-color: rgb(255 203 16);
   position: relative;
 }
@@ -182,7 +182,7 @@ label {
   display: block;
   height: 334px;
   position: absolute;
-  top: 105px;
+  top: 127px;
   left: 0px;
   right: 0px;
   max-width: 1300px;
@@ -233,12 +233,12 @@ label {
 #secbox1 {
   margin-left: 1.5rem;
   background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px,
-    linear-gradient(rgb(172, 168, 168) 0 0) right bottom / 2px 70%, #fff;
+    linear-gradient(rgb(172, 168, 168) 0 0) right bottom / 2px 70%;
   background-repeat: no-repeat;
 }
 #secbox2 {
   margin-right: 1.5rem;
-  background: linear-gradient(rgb(172, 168, 168) 0 0) top / 95% 2px, #fff;
+  background: linear-gradient(rgb(172, 168, 168) 0 0) top / 95% 2px;
   background-repeat: no-repeat;
 }
 .footer {
@@ -252,17 +252,18 @@ label {
   font-weight: 200;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 621px) and (max-device-width: 768px) {
   html {
     font-size: 50%;
   }
   .logo img {
-    width: 19rem;
-    height: 6rem;
+    width: 15rem;
+    height: 5.5rem;
   }
   .rlist-item a,
   .llist-item a {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    padding: .8rem;
   }
   .c {
     border: 1.5rem solid #35006D;
@@ -279,8 +280,11 @@ label {
   .rbtn {
     width: 8.5rem;
   }
+  .section2 {
+    height: 275px;
+  }
   .imgsec2 {
-    top: 90px;
+    top: 105px;
   }
   .imgsec2 img {
     width: 50%;
@@ -298,11 +302,11 @@ label {
   }
   #secbox1 {
     background: linear-gradient(rgb(172, 168, 168) 0 0) top / 90% 2px,
-      linear-gradient(rgb(172, 168, 168) 0 0) right bottom / 2px 77%, #fff;
+      linear-gradient(rgb(172, 168, 168) 0 0) right bottom / 2px 77%;
     background-repeat: no-repeat;
   }
   #secbox2 {
-    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 90% 2px, #fff;
+    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 90% 2px;
     background-repeat: no-repeat;
   }
   .footer {
@@ -310,7 +314,7 @@ label {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 620px) {
   .navigation {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -432,13 +436,13 @@ label {
   }
   #secbox1 {
     margin-bottom: 0rem;
-    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px, #fff;
+    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 93% 2px;
     background-repeat: no-repeat;
   }
   #secbox2 {
     margin-top: 0rem;
     padding-bottom: 0rem;
-    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 40% 2px, #fff;
+    background: linear-gradient(rgb(172, 168, 168) 0 0) top / 40% 2px;
     background-repeat: no-repeat;
   }
   .footer {
