@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="main" id="home">
+  <div id="home">
     <nav class="navigation">
       <input type="checkbox" id="toggle">
       <label for="toggle"><i class="fa-solid fa-bars fa-2x"></i></label>
@@ -33,7 +33,7 @@
         <li class="llist-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section id="carousels" class="carousel slide c" data-ride="carousel">
+    <div id="carousels" class="carousel slide c" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item bg-img carousel-image active"></div>
         <div class="carousel-item bg-img carousel-image"></div>
@@ -47,10 +47,10 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </section>
+    </div>
     <article class="flexcontainer" id="services">
       <figure class="box">
-        <img src="./assets/beach.jpg" alt="beach_card img" class="fig">
+        <img src="./assets/beach.jpg" alt="beach image" class="fig">
         <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -58,11 +58,11 @@
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" class="rbtn">
+          <a href="#services">Read More</a>
         </figcaption>
       </figure>
       <figure class="box">
-        <img src="./assets/sunset.jpg" alt="sunset_card img" class="fig">
+        <img src="./assets/sunset.jpg" alt="sunset image" class="fig">
         <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -70,11 +70,11 @@
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" class="rbtn">
+          <a href="#services">Read More</a>
         </figcaption>
       </figure>
       <figure class="box">
-        <img src="./assets/sunset2.jpg" alt="sunset2_card img" class="fig">
+        <img src="./assets/sunset2.jpg" alt="sunset image" class="fig">
         <figcaption>
           <h3 class="hbox">Lorem ipsum dolor sit amet.</h3>
           <p class="pfig">
@@ -82,11 +82,11 @@
             expedita a officia eum repudiandae quo perspiciatis. Autem animi
             optio excepturi saepe modi aspernatur, veritatis voluptatibus!
           </p>
-          <input type="button" value="Read More" class="rbtn">
+          <a href="#services">Read More</a>
         </figcaption>
       </figure>
     </article>
-    <section class="imgcontainer" id="about">
+    <div class="imgcontainer" id="about">
       <article class="section2">
         <h1 class="hsection2">Cras elit massa</h1>
         <p class="psection2">
@@ -97,27 +97,28 @@
           <img src="./assets/Fruit.png" alt="fruit">
         </div>
       </article>
-    </section>
+    </div>
     <section class="imgbelowsec">
-      <h1 class="imgbelowh">Donec eu viverra neque</h1>
+      <h2 class="imgbelowh">Donec eu viverra neque</h2>
       <p class="imgpara">
         Nulla a sem in erat accumsan molestic et ac dolor. Vivamus ornare arcu
         id lacus rhonus mollis. Nulla facillsi. Sed cursus dolor dignissim
         luctus.
       </p>
     </section>
-    <section class="section4" id="contact">
+    <div class="section4" id="contact">
       <p class="secbox" id="secbox1">
         "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
         parturient montes, nascetur ridiculus mus. Mruris vitae posuere
         turpis."
       </p>
+      <div class="lborder"></div>
       <p class="secbox" id="secbox2">
         "Ut a consequat mi. Orci varius natoque penatibus et magnis dis
         parturient montes, nascetur ridiculus mus. Mruris vitae posuere
         turpis."
       </p>
-    </section>
+    </div>
   </div>
   <footer class="footer">
     <span>Copyright &copy; 2019 Natural. All rights reserved.</span>

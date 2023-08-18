@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-.main {
+#home{
   flex: 1;
 }
 .navigation {
@@ -128,26 +128,22 @@ label {
   margin-bottom: 0;
   font-weight: 300;
   color: #443636;
+  padding-bottom: 1.5rem;
 }
-.rbtn {
-  width: 9rem;
-  border: none;
-  background-color: white;
+.box a{
+  text-decoration: none;
   color: #35006D;
-  padding: 1rem 0rem;
   font-weight: 400;
   cursor: pointer;
-  margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
-  border-radius: 0.8rem;
 }
-.rbtn:hover {
+.box a:hover {
   color: black;
 }
 .imgcontainer {
   height: 435px;
 }
 .section2 {
+  margin-top: 3rem;
   width: 100%;
   height: 300px;
   background-color: rgb(255 203 16);
@@ -217,29 +213,24 @@ label {
   display: flex;
   max-width: 1300px;
   margin: 0 auto;
+  gap: 1em;
 }
 .secbox {
   box-sizing: border-box;
   width: 50%;
   text-align: center;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0.5rem;
   padding-bottom: 0rem;
-  margin-top: 4.5rem;
+  margin: 4.5rem 2rem;
   margin-bottom: 5rem;
   color: #35006D;
   font-style: italic;
   font-weight: 200;
+  border-top: 2px solid rgb(172, 168, 168);
 }
-#secbox1 {
-  margin-left: 1.5rem;
-  background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 93% 2px,
-    linear-gradient(to right bottom, rgb(172, 168, 168), rgb(172, 168, 168)) right bottom / 2px 70%;
-  background-repeat: no-repeat;
-}
-#secbox2 {
-  margin-right: 1.5rem;
-  background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 95% 2px;
-  background-repeat: no-repeat;
+.lborder{
+  margin: 6rem 0;
+  border-left: 2px solid rgb(172, 168, 168);
 }
 .footer {
   display: block;
@@ -277,8 +268,14 @@ label {
   .fig {
     height: 22rem;
   }
-  .rbtn {
-    width: 8.5rem;
+  .hbox {
+    font-size: 2rem;
+  }
+  .box p {
+    font-size: 1.75rem;
+  }
+  .box a{
+    font-size: 2rem;
   }
   .section2 {
     height: 275px;
@@ -299,15 +296,6 @@ label {
   }
   .secbox {
     font-size: 2rem;
-  }
-  #secbox1 {
-    background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 90% 2px,
-    linear-gradient(to right bottom, rgb(172, 168, 168), rgb(172, 168, 168)) right bottom / 2px 77%;
-    background-repeat: no-repeat;
-  }
-  #secbox2 {
-    background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 90% 2px;
-    background-repeat: no-repeat;
   }
   .footer {
     font-size: 2rem;
@@ -418,32 +406,38 @@ label {
   .imgsec2 {
     width: 100%;
     height: 35rem;
-    top: 12rem;
+    top: 13rem;
   }
   .imgsec2 img {
-    width: 70%;
-    height: 92%;
+    width: 76%;
+    height: 88%;
   }
   .imgbelowh {
     font-size: 2.3rem;
   }
   .section4 {
     flex-wrap: wrap;
+    gap: 2em;
   }
   .secbox {
     width: 100%;
-    padding: 30px;
+    padding: 25px;
+  }
+  .lborder{
+    width:33%;
+    margin: 0rem auto;
+    display: block;
+    border-top: 2px solid rgb(172, 168, 168);
   }
   #secbox1 {
     margin-bottom: 0rem;
-    background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 93% 2px;
-    background-repeat: no-repeat;
+    padding-bottom: 0rem;
   }
   #secbox2 {
     margin-top: 0rem;
+    padding-top: 0rem;
+    border-top: none;
     padding-bottom: 0rem;
-    background: linear-gradient(to top, rgb(172, 168, 168), rgb(172, 168, 168)) top / 40% 2px;
-    background-repeat: no-repeat;
   }
   .footer {
     padding: 15px;
