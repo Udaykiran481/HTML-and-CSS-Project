@@ -139,16 +139,6 @@ label {
 .box a:hover {
   color: black;
 }
-.imgcontainer {
-  height: 435px;
-}
-.section2 {
-  margin-top: 3rem;
-  width: 100%;
-  height: 300px;
-  background-color: rgb(255 203 16);
-  position: relative;
-}
 .hsection2,
 .imgbelowh {
   display: block;
@@ -163,32 +153,50 @@ label {
   padding-top: 5.5rem;
   color: #35006D;
 }
-.psection2 {
+.image-box{
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-top: 2.2rem;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(255 203 16); 
+  color: #35006D;
+  z-index: 1;
+}
+.content p{
+  width: 40%;
   text-align: center;
   font-size: 1.6rem;
-  display: block;
-  width: 40%;
-  margin: 0 auto;
-  margin-bottom: 0px;
-  line-height: 1.5;
-  color: #35006D;
   font-weight: 300;
 }
-.imgsec2 {
-  display: block;
-  height: 334px;
-  position: absolute;
-  top: 127px;
-  left: 0px;
-  right: 0px;
-  max-width: 1300px;
-  margin: 0 auto;
+.image-container {
+  position: relative;
+  text-align: center;
+  height: 50%;
 }
-.imgsec2 img {
-  width: 40%;
-  height: 100%;
-  display: block;
-  margin: auto;
+.image-container img {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 470px;
+  height: auto;
+}
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 46%;
+  background-color:rgb(255 203 16);
 }
 .imgbelowsec {
   max-width: 1300px;
@@ -227,10 +235,16 @@ label {
   font-style: italic;
   font-weight: 200;
   border-top: 2px solid rgb(172, 168, 168);
+  position: relative;
 }
-.lborder{
-  margin: 6rem 0;
-  border-left: 2px solid rgb(172, 168, 168);
+#secbox1::before {
+  content: "";
+  position: absolute;
+  right: -31px;
+  top: 27px;
+  bottom: 0;
+  width: 2px;
+  background-color: rgb(172, 168, 168);
 }
 .footer {
   display: block;
@@ -242,7 +256,11 @@ label {
   color: white;
   font-weight: 200;
 }
-
+@media only screen and (min-width: 769px) and (max-width: 1080px){
+  .content p{
+    width: 60%;
+  }
+}
 @media only screen and (min-width: 621px) and (max-width: 768px) {
   html {
     font-size: 50%;
@@ -277,18 +295,15 @@ label {
   .box a{
     font-size: 2rem;
   }
-  .section2 {
-    height: 275px;
+  .image-container img {
+    width: 59%;
   }
-  .imgsec2 {
-    top: 105px;
-  }
-  .imgsec2 img {
-    width: 50%;
-  }
-  .psection2 {
+  .content p{
     font-size: 2rem;
-    width: 53%;
+    width: 81%;
+  }
+  .imgbelowh{
+    padding-top: 0;
   }
   .imgpara {
     font-size: 2rem;
@@ -297,11 +312,13 @@ label {
   .secbox {
     font-size: 2rem;
   }
+  #secbox1::before{
+    right: -24px;
+  }
   .footer {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 620px) {
   .navigation {
     justify-content: space-between;
@@ -392,27 +409,26 @@ label {
   .fig {
     height: 25rem;
   }
-  .psection2,
+  .hsection2 {
+    font-size: 3rem;
+  }
+  .image-box{
+    height: 388px;
+  }
+  .content p{
+    font-size: 1.6rem;
+    width: 90%;
+  }
+  .image-container img {
+    top: 45%;
+    max-width: 66%;
+  }
   .imgpara {
     font-size: 1.6rem;
     width: 90%;
   }
-  .section2 {
-    height: 290px;
-  }
-  .hsection2 {
-    font-size: 3rem;
-  }
-  .imgsec2 {
-    width: 100%;
-    height: 35rem;
-    top: 13rem;
-  }
-  .imgsec2 img {
-    width: 76%;
-    height: 88%;
-  }
   .imgbelowh {
+    padding-top: 0rem;
     font-size: 2.3rem;
   }
   .section4 {
@@ -423,24 +439,39 @@ label {
     width: 100%;
     padding: 25px;
   }
-  .lborder{
-    width:33%;
-    margin: 0rem auto;
-    display: block;
-    border-top: 2px solid rgb(172, 168, 168);
-  }
   #secbox1 {
     margin-bottom: 0rem;
     padding-bottom: 0rem;
   }
   #secbox2 {
     margin-top: 0rem;
-    padding-top: 0rem;
     border-top: none;
     padding-bottom: 0rem;
+  }
+  #secbox1::before{
+    display: none;
+  }
+  #secbox2::before {
+    content: "";
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    top: 0;
+    background-color: rgb(172, 168, 168);
   }
   .footer {
     padding: 15px;
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 319px) and (max-width: 440px){
+  .image-container img {
+    top: 37%;
+    max-width: 80%;
+  }
+  .bg-color{
+    height: 37%;
   }
 }
